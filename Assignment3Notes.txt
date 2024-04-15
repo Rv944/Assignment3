@@ -1,0 +1,71 @@
+Node Structure.
+
+Data Field:
+Stores the actual value or data that the node is intended to hold.
+It could be any type of data (int, char, float, etc.) based on the type defined when 
+creating the node.
+
+Pointer Field:
+Stores the memory address of the next node in the linked list.
+It's essentially a reference or a link to the subsequent node.
+
+Understanding the Node structure is crucial as it forms the building block of the 
+linked list. Each node not only holds a piece of data but also a reference to the 
+next node, which allows it to chain them together and create a dynamic, linear data structure.
+
+
+
+Insert.
+
+The "insert" function in a linked list adds a new node to the list at a specified position,0
+shifting existing nodes as necessary to accommodate the new element. This operation 
+typically involves traversing the list to find the correct insertion point and adjusting 
+the pointers of the neighboring nodes to include the new node. The inserted node's pointer 
+is set to the node that previously occupied the position, and the previous node's pointer 
+is updated to point to the new node. This allows for the seamless integration of the new 
+node into the existing linked list structure.
+
+
+Insert at tail/ Insert at index.
+
+
+The "Insert at tail" function in a linked list adds a new node to the end of the list. 
+This involves traversing the list to find the current tail node and then setting the next
+pointer of that node to the new node.
+ 
+
+The "Insert at index" function in a linked list inserts a new node at a specified position 
+in the list, shifting subsequent nodes as needed. This typically involves traversing the 
+list to find the node at the given index and adjusting pointers to include the new node.
+
+Delete/ Update.
+
+The "delete" function in a linked list removes a node from the list by adjusting the pointers
+of the surrounding nodes to bypass the node being deleted. 
+This operation typically involves finding the node to be deleted by traversing the 
+list and then updating the pointers of the previous and next nodes to skip over the node 
+being removed.
+
+
+The "update" function in a linked list modifies the value of a node at a specified 
+position by traversing to that node and changing its data field. 
+This operation alters the content of an existing node without changing the overall 
+structure or arrangement of the linked list.
+
+Get Node.
+
+The "get" function in a linked list retrieves the value of a node at a specified position 
+by traversing to that node in the list. This operation allows you to access and return the 
+data stored in a particular node without modifying the structure of the linked list.
+
+The Results.
+
+
+A linked list is a dynamic data structure commonly used in computer science and programming.
+Each element in a linked list is represented as a node, which contains both data and a 
+pointer to the next node in the sequence.
+This structure supports various operations through functions such as insert, insert at tail,
+insert at index, delete, update, and get, allowing for flexible and efficient data 
+manipulation.
+These functions enable developers to add, remove, modify, and access elements within the 
+linked list based on specific requirements and positions.
